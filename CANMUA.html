@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script language="javascript">
+$(document).ready(function() {
+	var arr = new Array();
+	arr[0]="images/1.jpg";
+	arr[1]="images/8.jpg";
+	arr[2]="images/e.jpg";
+	arr[3]="images/4.jpg";
+	arr[4]="images/5.jpg";
+	arr[5]="images/7.jpg";
+	i=0;
+	fadeSlide();
+	$("#next").click(function(){
+		i++;
+		if(i==arr.length)
+			i=0;
+		img.src= arr[i];
+		$("#img").fadeOut();
+		$("#img").fadeIn();
+	});
+	$("#pre").click(function(){
+		i--;
+		if(i==-1)
+			i=arr.length-1;
+		img.src= arr[i];
+		$("#img").fadeOut();
+		$("#img").fadeIn();	
+	});
+	
+});
+
+function fadeSlide()
+{
+		setTimeout(function(){
+		img = document.getElementById("img");
+		var arr = new Array();
+		arr[0]="images/1.jpg";
+		arr[1]="images/8.jpg";
+		arr[2]="images/e.jpg";
+		arr[3]="images/4.jpg";
+		arr[4]="images/5.jpg";
+		arr[5]="images/7.jpg";	
+		i++;
+		if(i==-1) i==arr.legnth-1;
+		if(i==arr.length)
+			i=0;
+		img.src = arr[i];
+		$("#img").fadeOut();
+		$("#img").fadeIn();		
+		fadeSlide();
+		},3000);
+}
+</script>
+</head>
+<body>
+	<form>
+	<div style="text-align:center"><a href="dangki/dangki.html"> <input type="button" value="đăng kí" /> </a>
+	 &nbsp;<a href="8-login-form/index.html"><input type="button" value="đăng nhập" /> </a></div>
+	</form>
+	
+<table width="818" border="0" cellpadding="0" cellspacing="0" align="center">
+<tr>
+	<td><a href="#"><img src="images/prev.png" id="pre" /></td>
+	<td>
+		<img src="images/1.jpg" id="img" />
+    </td>
+    <td><a href="#"> <img src="images/next.png" id="next" /></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
