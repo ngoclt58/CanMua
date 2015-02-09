@@ -16,21 +16,20 @@
         <div id="signup">   
          <h1 style="color:#F00;">Sign Up for Free</h1>
           
-          <form action="/" method="post">
-          
+          <form action="register.php" method="post">
           <div class="top-row">
             <div class="field-wrap">
               <label>
                 <span class="req"></span>
               </label>
-              <input type="text" required autocomplete="off" placeholder="firstname"/>
+              <input type="text" name = "firstname" required autocomplete="off" placeholder="First Name*"/>
             </div>
         
             <div class="field-wrap">
               <label>
                 <span class="req"></span>
               </label>
-              <input type="text"required autocomplete="off" placeholder="lastname" />
+              <input type="text" name="lastname"required autocomplete="off" placeholder="Last Name*" />
             </div>
           </div>
 
@@ -38,14 +37,14 @@
             <label>
               <span class="req"></span>
             </label>
-            <input type="email"required autocomplete="off" placeholder="email"/>
+            <input type="email" name = "email" required autocomplete="off" placeholder="Email*"/>
           </div>
           
           <div class="field-wrap">
             <label>
               <span class="req"></span>
             </label>
-            <input type="password"required autocomplete="off" placeholder="Password"/>
+            <input type="password" name="password" required autocomplete="off" placeholder="Set a Password*"/>
           </div>
           
           <button type="submit" class="button button-block"/>Get Started</button>
@@ -54,31 +53,9 @@
 
         </div>
         
-        <div id="login">   
-          <h1>Welcome Back!</h1>
+        <div id="login"> 
           
-          <form action="/" method="post">
-          
-            <div class="field-wrap">
-            <label>
-              Email Address<span class="req">*</span>
-            </label>
-            <input type="email"required autocomplete="off"/>
-          </div>
-          
-          <div class="field-wrap">
-            <label>
-              Password<span class="req">*</span>
-            </label>
-            <input type="password"required autocomplete="off"/>
-          </div>
-          
-          <p class="forgot"><a href="#">Forgot Password?</a></p>
-          
-          <button class="button button-block"/>Log In</button>
-          
-          </form>
-		
+         
         </div>
         
       </div><!-- tab-content -->
