@@ -1,0 +1,23 @@
+.box{
+	margin-top:100px;
+	text-align: center;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	
+}
+#bg{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	} 
+.sttitle{
+	style="text-align:center;
+	font-size:36px;
+	
+	text="#800000";
+}
