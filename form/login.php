@@ -16,7 +16,9 @@ $user = "root";
 $pass = "";
 $db = "canmua";
 $conn = new mysqli($host, $user, $pass, $db);
-
+if( !$conn){
+     die("không nết nối được vào MySQL server");
+};
 $email=$_POST['email'];
 $password=$_POST['password'];
 

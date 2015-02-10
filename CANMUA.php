@@ -110,7 +110,7 @@ function fadeSlide()
                 <div class="main_info"><a href="#"> Sản phẩm </div> </a>
                 <div class="main_info"><a href="#"> Khuyến Mãi </div> </a>
                 <div class="main_info"><a href="#"> Tư Vấn </div> </a>
-                <div class="main_info"><a href="#"> Tuyển dụng </div> </a>
+                <div class="main_info"><a href="DanhSach/list.php"> Danh sách </div> </a>
                 <div class="main_info"><a href="#"> Liên Hệ </div> </a>
                 <div class="main_info"><a href="#"> Tài liệu </div> </a>
             </div>  
