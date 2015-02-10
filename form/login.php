@@ -27,11 +27,11 @@ if($row['id']>0)
 {
    if($row['password']==$password)
    {
-       echo "Dang nhap thanh cong";
        $_SESSION["name"]=$row['lastname'];
        $_SESSION["email"]=$row['email'];
        $_SESSION["lastname"]=$row['lastname'];
        $_SESSION["password"]=$row['password']; 
+	   header("location:http://localhost/CanMua/CANMUA.php");
    }
    else
    {

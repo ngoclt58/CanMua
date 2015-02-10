@@ -1,3 +1,7 @@
+﻿<?php
+session_start();
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -61,9 +65,7 @@ function fadeSlide()
 </head>
 <body>
     <!-- <a href="dangki/dangki.html"> <input type="button" value="đăng kí" /> </a>
-	<a href="8-login-form/index.html"><input type="button" value="đăng nhập" /> </a></div> 
-	
-	
+	<a href="8-login-form/index.html"><input type="button" value="đăng nhập" /> </a></div> 	
 <table width="818" border="0" cellpadding="0" cellspacing="0" align="center">
 <tr>
 	<td><a href="#"><img src="images/prev.png" id="pre" /></td>
@@ -84,8 +86,14 @@ function fadeSlide()
             </div>
             <form>
         	<div class="head_01_button">  	
-        		<a href="dangki/dangki.html"> <input type="button" value="đăng kí" /> </a>
+        	<?php
+                if(!isset($_SESSION['email'])){
+            ?>
+                <a href="dangki/dangki.html"> <input type="button" value="đăng kí" /> </a>
 				<a href="form/index.php"><input type="button" value="đăng nhập" /> </a>
+             <?php
+                }
+             ?>
             </div>
             </form> 
 			<div class="head_01_search">
