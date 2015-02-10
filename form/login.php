@@ -17,11 +17,11 @@ $email=$_POST['email'];
 $password=$_POST['password'];
 
 $check = mysqli_query($conn,"SELECT * FROM account WHERE email='$email'");
+$row=mysqli_fetch_assoc($check);
 
-if(mysqli_num_row($check)>0)
+if($row['id']>0)
 {
-   $mat_khau=mysqli($conn, "SELECT password FROM account WHERE email = '$email'");
-   if($password==$matkhau)
+   if($row['password']==$password)
    {
        echo "Dang nhap thanh cong";
    }
