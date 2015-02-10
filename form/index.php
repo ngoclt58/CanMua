@@ -11,18 +11,11 @@
   <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
-<?php
-if(isset($_GET['e'])){
- $email = $_GET['e'];
-}
-?>
-
-  <section class="container">
+	<section class="container">
     <div class="login">
       <h1>Login to Web App</h1>
       <form method="post" action="login.php">
-       <p> <input type="text" name="email" value="<?php if(isset($_GET['e'])){
- 			$email = $_GET['e'];echo $email;}?>" placeholder="Username or Email">  </p> 
+       <p> <input type="text" name="email" value="<?php if(isset($_GET['e'])){echo $_POST['email'];}?> " placeholder="Username or Email">  </p> 
         <p><input type="password" name="password" value="" placeholder="Password"></p>
 		
         <p class="remember_me">
