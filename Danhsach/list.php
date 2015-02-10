@@ -10,13 +10,13 @@ $host = "localhost";
 $user = "root";
 $pass = "";
 $db = "canmua";
-$email = $_SESSION['email'];
+$check = false;
 $conn = new mysqli($host, $user, $pass, $db);
-if( !$conn){
-   die("không nết nối được vào MySQL server");
-};
-$check = mysqli_query($conn,"SELECT * FROM dangbai WHERE email='$email'");
-if(!$check){
+if(isset($_SESSION['email'])){
+	$email = $_SESSION['email'];
+	$check = mysqli_query($conn,"SELECT * FROM dangbai WHERE email='$email'") or die("không nết nối được vào MySQL server");
+}
+if(!isset($email)){
 	die('Chua co SP nao!');
 }
 while($row = mysqli_fetch_array($check)){

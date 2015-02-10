@@ -89,11 +89,16 @@ function fadeSlide()
         	<?php
                 if(!isset($_SESSION['email'])){
             ?>
-                <a href="dangki/dangki.html"> <input type="button" value="đăng kí" /> </a>
-				<a href="form/index.php"><input type="button" value="đăng nhập" /> </a>
+                <a href="/CanMua/dangki/dangki.html"> <input type="button" value="đăng kí" /> </a>
+				<a href="/CanMua/form/index.php"><input type="button" value="đăng nhập" /> </a>
              <?php
                 }
+				else{
              ?>
+             <a href="/CanMua/dangxuat.php"> <input type="button" value="đăng xuất" /> </a>
+             <?php
+				}
+			 ?>
             </div>
             </form> 
 			<div class="head_01_search">
@@ -110,9 +115,9 @@ function fadeSlide()
                 <div class="main_info"><a href="#"> Sản phẩm </div> </a>
                 <div class="main_info"><a href="#"> Khuyến Mãi </div> </a>
                 <div class="main_info"><a href="#"> Tư Vấn </div> </a>
-                <div class="main_info"><a href="DanhSach/list.php"> Danh sách </div> </a>
+                <div class="main_info"><a href="/CanMua/DanhSach/list.php"> Danh sách </div> </a>
                 <div class="main_info"><a href="#"> Liên Hệ </div> </a>
-                <div class="main_info"><a href="#"> Tài liệu </div> </a>
+                <div class="main_info"><a href="../dangxuat.php"> Đăng xuất </div> </a>
             </div>  
             
             <div class="main_02">
