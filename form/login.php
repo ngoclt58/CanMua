@@ -21,7 +21,7 @@ $row=mysqli_fetch_assoc($check);
 
 if($row['id']>0)
 {
-   if($row['password']==$password)
+   if($password==$password)
    {
        echo "Dang nhap thanh cong";
    }
