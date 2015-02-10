@@ -19,6 +19,7 @@
       	//Không kết nối được, thoát ra và báo lỗi
       		die("không nết nối được vào MySQL server");
 		};
+		if(isset($_POST['email'])){
 		$firstname=$_POST['firstname'];
 		$lastname=$_POST['lastname'];
 		$email=$_POST['email'];
@@ -27,13 +28,17 @@
 		mysqli_query($conn,"SELECT * FROM account");
 		mysqli_query($conn,"INSERT INTO account (firstname,lastname,email,password) VALUES ('$firstname','$lastname','$email','$password')");
 		mysqli_close($conn);
+		}
 	?>
  	
 <section class="container">
     <div class="login">
       <h1>Login to Web App</h1>
       <form method="post" action="login.php">
-       <p> <input type="text" name="email" value="<?php echo $_POST['email'];?> " placeholder="Username or Email">  </p> 
+       <p> <input type="text" name="email" placeholder="Username or Email" value="<?php 
+	   if(isset($_POST['email'])){
+		   echo $_POST['email']; }?>
+            "  ></p> 
         <p><input type="password" name="password" value="" placeholder="Password"></p>
 		
         <p class="remember_me">

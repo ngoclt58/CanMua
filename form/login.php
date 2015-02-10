@@ -1,4 +1,8 @@
-﻿<!doctype html>
+﻿<?php
+session_start();
+?>
+
+<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -24,15 +28,19 @@ if($row['id']>0)
    if($row['password']==$password)
    {
        echo "Dang nhap thanh cong";
+       $_SESSION["name"]=$row['lastname'];
+       $_SESSION["email"]=$row['email'];
+       $_SESSION["lastname"]=$row['lastname'];
+       $_SESSION["password"]=$row['password']; 
    }
    else
    {
-       echo "Sai mat khau";
+       header("location:http://localhost/CanMua/form/index.php?error=1");
    }
 }
 else
 {
-   echo "Tai khoan khong ton tai";
+   header("location:http://localhost/CanMua/form/index.php?error=-1");
 }
 
 mysqli_close($conn);

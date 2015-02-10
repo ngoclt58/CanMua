@@ -14,10 +14,29 @@
 	<section class="container">
     <div class="login">
       <h1>Login to Web App</h1>
+      <?php
+	        if(isset($_GET['error'])){
+				$error=$_GET['error'];
+			}
+			else{
+			    $error=0;
+			}
+			
+		    if($error==-1){
+			   echo "Tai khoan khong ton tai!";
+			}
+			elseif($error==1){
+			   echo "Sai mat khau!";
+			}
+			else{
+			   echo "Welcome to my website";
+			}
+        ?>
       <form method="post" action="login.php">
-       <p> <input type="text" name="email" value="<?php if(isset($_GET['e'])){echo $_POST['email'];}?> " placeholder="Username or Email">  </p> 
+       <p> <input type="text" name="email" placeholder="Email" value="" >  </p> 
         <p><input type="password" name="password" value="" placeholder="Password"></p>
-		
+		</br>
+        
         <p class="remember_me">
           <label>
             <input type="checkbox" name="remember_me" id="remember_me">
