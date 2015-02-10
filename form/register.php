@@ -28,7 +28,7 @@
 		mysqli_query($conn,"INSERT INTO account (firstname,lastname,email,password) VALUES ('$firstname','$lastname','$email','$password')");
 		mysqli_close($conn);
 	?>
- 	<a href="../form/index.html?e=<?php echo $email?>"> Tiep tuc </a> 
+ 	
 <section class="container">
     <div class="login">
       <h1>Login to Web App</h1>
