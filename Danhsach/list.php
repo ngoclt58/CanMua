@@ -13,14 +13,19 @@ $db = "canmua";
 $email = $_SESSION['email'];
 $conn = new mysqli($host, $user, $pass, $db);
 if( !$conn){
-   ưdie("không nết nối được vào MySQL server");
+   die("không nết nối được vào MySQL server");
 };
-$check = mysqli_query($conn,"SELECT * FROM dangbai WHERE email=$email");
+$check = mysqli_query($conn,"SELECT * FROM dangbai WHERE email='$email'");
 if(!$check){
 	die('Chua co SP nao!');
 }
-while($row = mysqli_fetch_assoc($check)){
-    echo "1";
+while($row = mysqli_fetch_array($check)){
+		echo "Danh mục: ",$row["danhMuc"],"<br>";
+		echo "Khu vực: ", $row["khuVuc"]," <br>";
+		echo "Tên sản phẩm: ", $row["tenSP"]," <br>";
+		echo "Yêu cầu: ", $row["yeuCau"]," <br>";
+		echo "Liên hệ: ", $row["lienHe"]," <br>";
+		echo "<br>","<br>";
 }
 ?>
 </body>
