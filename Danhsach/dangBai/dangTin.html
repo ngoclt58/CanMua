@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Untitled Document</title>
+<style type="text/css">
+b {
+	color: #400000;
+}
+</style>
+</head>
+<link rel="stylesheet" type ="text/css" href="style.css">
+<body  class="box">
+<div id="bg"><img width="100%" height="100%" src="images/Post-It-Note-with-Push-Pin-500x354.png"/></div>
+<h1>
+  <div class="sttitle";><b>Đăng tin cần mua</b></div>
+</h1>
+<div>
+  <form action="xacNhanDangBai.php" method="post">
+    Danh mục:<br>
+    <select name="danhMuc">
+      <option> Điện thoại </option>
+      <option> Máy tính </option>
+      <option> Linh kiện </option>
+      <option> Máy ảnh </option>
+      <option> Ô tô</option>
+      <option> Xe máy</option>
+      <option> Xe đạp</option>
+      <option>Xích lô</option>
+      <option>Nước hoa</option>
+      <option>Mỹ phẩm</option>
+      <option>Thời trang</option>
+      <option>Sách</option>
+      <option>Nội thất</option>
+      <option>Ngoại thất</option>
+      <option>Giải trí</option>
+      <option>Thực phẩm</option>
+      <option> Khác </option>
+    </select>
+    <br>
+    Khu vực: <br>
+    <input type="text" name="khuVuc" required = "required">
+    <br>
+    Tên sản phẩm cần mua:<br>
+    <input type="text" name="tenSP" required = "required">
+    <br>
+    Yêu cầu về sản phẩm:<br>
+    <textarea name="yeuCau" rows="7" cols="70" required = "required">
+        </textarea>
+    <br>
+    Liên hệ:<br>
+    <textarea name="lienHe" rows="5" cols="30" required = "required"></textarea>
+    </p>
+    <div style="text-align:center">
+      <input type="submit" value="Gửi">
+    </div>
+    <div id="login"> </div>
+  </form>
+</div>
+</body>
+</html>

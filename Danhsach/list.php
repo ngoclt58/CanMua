@@ -5,6 +5,7 @@
 <head>
 </head>
 <body>
+
 <?php
 $host = "localhost";
 $user = "root";
@@ -20,6 +21,7 @@ if(!isset($email)){
 	die('Chua co SP nao!');
 }
 while($row = mysqli_fetch_array($check)){
+		echo "<br>","<hr size=0.25>";
 		echo "Danh mục: ",$row["danhMuc"],"<br>";
 		echo "Khu vực: ", $row["khuVuc"]," <br>";
 		echo "Tên sản phẩm: ", $row["tenSP"]," <br>";
@@ -28,5 +30,6 @@ while($row = mysqli_fetch_array($check)){
 		echo "<br>","<br>";
 }
 ?>
+
 </body>
 </html>

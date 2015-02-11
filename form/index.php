@@ -13,7 +13,7 @@
 <body>
 	<section class="container">
     <div class="login">
-      <h1>Login to Web App</h1>
+      <h1>ĐĂNG NHẬP</h1>
       <?php
 	        if(isset($_GET['error'])){
 				$error=$_GET['error'];
@@ -34,13 +34,13 @@
         ?>
       <form method="post" action="login.php">
        <p> <input type="text" name="email" placeholder="Email" value="" >  </p> 
-        <p><input type="password" name="password" value="" placeholder="Password"></p>
+        <p><input type="password" name="password" value="" placeholder="Mật khẩu"></p>
 		</br>
         
         <p class="remember_me">
           <label>
             <input type="checkbox" name="remember_me" id="remember_me">
-            Remember me on this computer
+            Duy trì đăng nhập
           </label>
         </p>
         <p class="submit"><input type="submit" name="commit" value="Login"></p>
@@ -49,7 +49,7 @@
     </div>
 
     <div class="login-help">
-      <p>Forgot your password? <a href="index.html">Click here to reset it</a>.</p>
+      <p>Quên mật khẩu? <a href="index.html">Nhấp chuột vào đây</a>.</p>
     </div>
   </section>
 
