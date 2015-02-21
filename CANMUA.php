@@ -79,7 +79,6 @@ function fadeSlide()
 	<div class="container">
     	<div class="head_01"> 
         	<div class="head_01_img">
-            	<img src="images/anh01.jpg" /> &nbsp;&nbsp;
                 <img src="images/anh02.jpg" /> &nbsp;&nbsp; 
                 <img src="images/Facebook.png" /> 
                 <img src="images/skype.png" />
@@ -121,7 +120,7 @@ function fadeSlide()
             </div>  
             
             <div class="main_02">
-            	<div class="main_02_img"><img src="images/aaa.png" /> </div>
+            	<div class="main_02_img"><img src="images/aaa.png"  /> </div>
         	 	<div class="main_02_img"><img src="images/1.jpg" id="img" /></div>
                 <div class="main_02_img">
                 	<div class="main_02_banner"> CÁC SẢN PHẨM CẦN MUA </div>
@@ -155,16 +154,16 @@ function fadeSlide()
                             <td><span style="font-size:20px; color:#F30;" class="main_02_news"><a href="#">Các tin tức mới</a></span><img src="images/demo08.jpg" /><hr /></td>
                           </tr>
                           <tr>
-                            <td><span><img src="images/tamgiac.jpg" /></span><span class="main_02_new"><a href="#"> Thanh lí xe máy nhập lậu Campuchia giá rẻ</a></span> </td>
+                            <td><span><img src="images/tamgiac.jpg" /></span><span class="main_02_new"><a href="#"> Cần mua điện thoại abc</a></span> </td>
                           </tr>
                           <tr>
-                            <td><span><img src="images/tamgiac.jpg" /></span><span class="main_02_new"><a href="#"> Bán xe nouvo 2 mắt đời chót </a></span></td>
+                            <td><span><img src="images/tamgiac.jpg" /></span><span class="main_02_new"><a href="#"> Cần mua xe xyz </a></span></td>
                           </tr>
                            <tr>
-                            <td><span><img src="images/tamgiac.jpg" /></span><span class="main_02_new"><a href="#"> Bán quả Óc Chó, Hạt Thông, Mắc Ca, Hạnh Nha, Hồ Đạp nhập khẩu </a></span></td>
+                            <td><span><img src="images/tamgiac.jpg" /></span><span class="main_02_new"><a href="#"> Cần mua abcxyz </a></span></td>
                           </tr>
                           <tr>
-                            <td><span><img src="images/tamgiac.jpg" /></span><span class="main_02_new"><a href="#"> Cần mua cau sọ gấp </a></span></td>
+                            <td><span><img src="images/tamgiac.jpg" /></span><span class="main_02_new"><a href="#"> Cần mua xyzabc </a></span></td>
                           </tr>
                         </table>
 
