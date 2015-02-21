@@ -7,7 +7,7 @@ session_start();
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
-<!--
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script language="javascript">
 $(document).ready(function() {
@@ -60,7 +60,7 @@ function fadeSlide()
 		fadeSlide();
 		},4000);
 }
-</script> -->
+</script> 
 <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -94,6 +94,9 @@ function fadeSlide()
                 }
 				else{
              ?>
+             
+             <a href="/CanMua/Danhsach/dangBai/dangTin.html"> <input type="button" value="Đăng bài" /> </a>
+             
              <a href="/CanMua/dangxuat.php"> <input type="button" value="đăng xuất" /> </a>
              <?php
 				}
@@ -117,7 +120,7 @@ function fadeSlide()
                 <div class="main_info"><a href="/CanMua/DanhSach/list.php"> Danh sách </div> </a>
                 <div class="main_info"><a href="#"> Liên Hệ </div> </a>
                 <div class="main_info"><a href="../dangxuat.php"> Đăng xuất </div> </a>
-            </div>  
+                 
             
             <div class="main_02">
             	<div class="main_02_img"><img src="images/aaa.png"  /> </div>

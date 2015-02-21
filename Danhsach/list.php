@@ -5,6 +5,7 @@
 <head>
 </head>
 <body>
+
 <?php
 $host = "localhost";
 $user = "root";
@@ -36,6 +37,7 @@ if(!isset($email)){
         </tr>
 <?php
 while($row = mysqli_fetch_array($check)){
+<<<<<<< HEAD
 ?>
         <tr>
              <td><h3><?php echo $row["danhMuc"] ?></h3></td>
@@ -50,5 +52,17 @@ while($row = mysqli_fetch_array($check)){
 </table>
 
 </center>
+=======
+		echo "<br>","<hr size=0.25>";
+		echo "Danh mục: ",$row["danhMuc"],"<br>";
+		echo "Khu vực: ", $row["khuVuc"]," <br>";
+		echo "Tên sản phẩm: ", $row["tenSP"]," <br>";
+		echo "Yêu cầu: ", $row["yeuCau"]," <br>";
+		echo "Liên hệ: ", $row["lienHe"]," <br>";
+		echo "<br>","<br>";
+}
+?>
+
+>>>>>>> origin/master
 </body>
 </html>
