@@ -34,12 +34,12 @@
 							<span>Free</span>
 							<small>now</small>
 						</div>			
-						<p  class="para-in">Viết gì cũng được :v :v :v</p>
+						<p  class="para-in">TOM&amp;JQUERY</p>
 				</div>
 				<!---->
 				<div class="in-line">
 					<div class="para-an">
-						<h3>LATEST  ARRIVALS</h3>
+						<h3>LATEST PRODUCT </h3>
 						<p>Check our all latest products in this section.</p>
 					</div>
 					<div class="lady-in">
@@ -60,7 +60,7 @@
 					
 			<div class="col-md-3 col-m-left">
 				<div class="in-left">				
-					<p class="code">Cool COLLECTIONS</p>		
+					<p class="code"></p>		
 					<div class="cool">		
 					</div>		
 				</div>
@@ -78,13 +78,11 @@
 					<h5>TWITTER  UPDATES</h5>
 					<span class="twitter-ic">	</span>
 					<div class="up-date">
-						<p>@suniljoshi Looks like nice and dicent design</p>
-						<a href="#">http://bit.ly/sun</a>
+						<p>@An abbjiscbxkja						</p>
 						<p class="ago">About 1 hour ago via twitterfeed</p>
 					</div>
 					<div class="up-date">
-						<p>@suniljoshi Looks like nice and dicent design</p>
-						<a href="#">http://bit.ly/sun</a>
+						<p>@Ngoc nánnscnknjjknas						</p>
 						<p class="ago">About 1 hour ago via twitterfeed</p>
 					</div>
 					<a href="#" class="tweets">More Tweets</a>

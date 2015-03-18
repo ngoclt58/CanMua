@@ -57,43 +57,25 @@
 				  <div class="span1_of_1_des">
 				  <div class="desc1">
 					<h3><?php echo $info['tenSP']?> </h3>
-					<p><?php echo $info['yeuCau']?></p>
-					<h5>Rs. 399 <a href="#">click for offer</a></h5>
+				<br/>	<p><h4><u>Yêu cầu:</u> <?php echo $info['yeuCau']?></h4></p>
+					<h5><a href="#"></a></h5>
 					<div class="available">
-						<h4>Available Options :</h4>
-						<ul>
-							<li>Size:
-								<select>
-									<option>L</option>
-									<option>XL</option>
-									<option>S</option>
-									<option>M</option>
-								</select>
-							</li>
-							<li>Quality:
-								<select>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-								</select>
-							</li>
-						</ul>
+						<h4></h4>
+						
 						<div class="form-in">
 							<a href="#">Add To Cart</a>
 						</div>
-						<span class="span_right"><a href="#">login to save in wishlist </a></span>
+						<span class="span_right"><a href="#">login to save in list </a></span>
 						<div class="clearfix"></div>
 					</div>
 					<div class="share-desc">
 						<div class="share">
 							<h4>Share Product :</h4>
 							<ul class="share_nav">
-								<li><a href="#"><img src="file:///C|/wamp/www/CanMua2/web/images/facebook.png" title="facebook"></a></li>
-								<li><a href="#"><img src="file:///C|/wamp/www/CanMua2/web/images/twitter.png" title="Twiiter"></a></li>
-								<li><a href="#"><img src="file:///C|/wamp/www/CanMua2/web/images/rss.png" title="Rss"></a></li>
-								<li><a href="#"><img src="file:///C|/wamp/www/CanMua2/web/images/gpluse.png" title="Google+"></a></li>
+								<li><a href="#"><img src="<?php echo base_url();?>web/images/facebook.png" title="facebook"></a></li>
+								<li><a href="#"><img src="<?php echo base_url();?>web/images/twitter.png" title="Twiiter"></a></li>
+								<li><a href="#"><img src="<?php echo base_url();?>web/images/rss.png" title="Rss"></a></li>
+								<li><a href="#"><img src="<?php echo base_url();?>web/images/gpluse.png" title="Google+"></a></li>
 				    		</ul>
 						</div>
 						<div class="clearfix"></div>
@@ -102,54 +84,21 @@
 			   	</div>
           	    <div class="clearfix"></div>
           	   </div>
-			   
-			    <!----- tabs-box ---->
-		<div class="sap_tabs">	
-				     <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
-						  <ul class="resp-tabs-list">
-						  	  <li class="resp-tab-item " aria-controls="tab_item-0" role="tab"><span>Product Description</span></li>
-							  <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Additional Information</span></li>
-							  <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Reviews</span></li>
-							  <div class="clearfix"></div>
-						  </ul>				  	 
 							<div class="resp-tabs-container">
 							    <h2 class="resp-accordion resp-tab-active" role="tab" aria-controls="tab_item-0"><span class="resp-arrow"></span>Product Description</h2><div class="tab-1 resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0" style="display:block">
+                                <?php foreach($comment as $temp){?>
 									<div class="facts">
-									  <p > There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined </p>
-										<ul>
-											<li>Research</li>
-											<li>Design and Development</li>
-											<li>Porting and Optimization</li>
-											<li>System integration</li>
-											<li>Verification, Validation and Testing</li>
-											<li>Maintenance and Support</li>
-										</ul>         
+                                    <a href="#"><img class="etalage_thumb_image img-responsive" src="<?php echo base_url();?>public/images/avata/<?php echo $temp['image']; ?>"  height="60px" width="60px" alt=" " ><b><?php echo $temp['username']?></b></a>
+                                   
+									  <p ><?php echo $temp['content']?></p>
+                                      <span><?php echo $temp['add_date']?></span>
+										       
 							        </div>
+                                    <br />
+                                    <?php }?>
 							    	</div>
-							      <h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow"></span>Additional Information</h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
-									<div class="facts">									
-										<p > Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections </p>
-										<ul >
-											<li>Multimedia Systems</li>
-											<li>Digital media adapters</li>
-											<li>Set top boxes for HDTV and IPTV Player applications on various Operating Systems and Hardware Platforms</li>
-										</ul>
-							        </div>	
-								</div>									
-							      <h2 class="resp-accordion" role="tab" aria-controls="tab_item-2"><span class="resp-arrow"></span>Reviews</h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
-									 <div class="facts">
-									  <p > There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined </p>
-										<ul>
-											<li>Research</li>
-											<li>Design and Development</li>
-											<li>Porting and Optimization</li>
-											<li>System integration</li>
-											<li>Verification, Validation and Testing</li>
-											<li>Maintenance and Support</li>
-										</ul>     
-							     </div>	
-							 </div>
-					      </div>
+							      
+							
 					 </div>
 					 <script src="file:///C|/wamp/www/CanMua2/web/js/easyResponsiveTabs.js" type="text/javascript"></script>
 		    <script type="text/javascript">
@@ -171,67 +120,27 @@
 					<h4>catogories</h4>
 						<div class="row1 scroll-pane">
 							<div class="col col-4">
-								<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>kurtas</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>Điện tử</label>
 							</div>
 							<div class="col col-4">
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>kutis</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>churidar kurta</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>salwar</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>printed sari</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox" ><i></i>shree</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Anouk</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>biba</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>fashion sari</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>fashion sari</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>fashion sari</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>fashion sari</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>fashion sari</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>fashion sari</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>fashion sari</label>
-								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>fashion sari</label>	
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Viễn thông</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Điện lạnh</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Thiết bị tin học</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Âm thanh</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox" ><i></i>Kỹ thuật số</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Đồ gia dụng</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Xe điện</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Phụ kiện</label>
 							</div>
 						</div>
 		</section>
 		
 		<section class="sky-form">
-			<h4>colour</h4>
-			<ul class="w_nav2">
-				<li><a class="color1" href="#"></a></li>
-				<li><a class="color2" href="#"></a></li>
-				<li><a class="color3" href="#"></a></li>
-				<li><a class="color4" href="#"></a></li>
-				<li><a class="color5" href="#"></a></li>
-				<li><a class="color6" href="#"></a></li>
-				<li><a class="color7" href="#"></a></li>
-				<li><a class="color8" href="#"></a></li>
-				<li><a class="color9" href="#"></a></li>
-				<li><a class="color10" href="#"></a></li>
-				<li><a class="color12" href="#"></a></li>
-				<li><a class="color13" href="#"></a></li>
-				<li><a class="color14" href="#"></a></li>
-				<li><a class="color15" href="#"></a></li>
-				<li><a class="color5" href="#"></a></li>
-				<li><a class="color6" href="#"></a></li>
-				<li><a class="color7" href="#"></a></li>
-				<li><a class="color8" href="#"></a></li>
-				<li><a class="color9" href="#"></a></li>
-				<li><a class="color10" href="#"></a></li>
-			</ul>
+			
 		</section>
 		<section class="sky-form">
-						<h4>discount</h4>
-						<div class="row1 scroll-pane">
-							<div class="col col-4">
-								<label class="radio"><input type="radio" name="radio" checked=""><i></i>60 % and above</label>
-								<label class="radio"><input type="radio" name="radio"><i></i>50 % and above</label>
-								<label class="radio"><input type="radio" name="radio"><i></i>40 % and above</label>
-							</div>
-							<div class="col col-4">
-								<label class="radio"><input type="radio" name="radio"><i></i>30 % and above</label>
-								<label class="radio"><input type="radio" name="radio"><i></i>20 % and above</label>
-								<label class="radio"><input type="radio" name="radio"><i></i>10 % and above</label>
-							</div>
-						</div>						
+						
+												
 		</section>
 	</div>
    </div>
@@ -240,26 +149,6 @@
 	</div>
 	</div>
 	<!---->
-	<div class="footer">
-		<div class="container">
-				<div class="footer-class">
-				<div class="class-footer">
-					<ul>
-						<li ><a href="file:///C|/wamp/www/CanMua2/web/index.html" class="scroll">HOME </a><label>|</label></li>
-						<li><a href="file:///C|/wamp/www/CanMua2/web/men.html" class="scroll">MEN</a><label>|</label></li>
-						<li><a href="file:///C|/wamp/www/CanMua2/web/women.html" class="scroll">WOMEN</a><label>|</label></li>
-						<li><a href="file:///C|/wamp/www/CanMua2/web/collection.html" class="scroll">COLLECTION</a><label>|</label></li>
-						<li><a href="file:///C|/wamp/www/CanMua2/web/collection.html" class="scroll">STORE PRODUCTS</a><label>|</label></li>
-						<li><a href="file:///C|/wamp/www/CanMua2/web/collection.html" class="scroll">LATEST  PRODUCT</a></li>
-					</ul>
-					 <p class="footer-grid">&copy; 2014 Template by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
-				</div>	 
-				<div class="footer-left">
-					<a href="file:///C|/wamp/www/CanMua2/web/index.html"><img src="file:///C|/wamp/www/CanMua2/web/images/logo1.png" alt=" " /></a>
-				</div> 
-				<div class="clearfix"> </div>
-			 	</div>
-		 </div>
-	</div>
+		
 </body>
 </html>

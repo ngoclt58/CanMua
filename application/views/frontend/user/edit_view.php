@@ -1,3 +1,4 @@
+<div class="box_entry" id="box_entry">
 <?php
     //--- Giu gia tri cua form
     $full_name = array(
@@ -48,7 +49,6 @@
 ?>
 
 <div id="box_entry">
-  	  <h2><span>Thêm Category</span></h2>
       <div class="error">
         <ul>
             <?php
@@ -60,22 +60,22 @@
       </div>
      <form name="frmEdit" id="frmEdit" action="" method="post" enctype="multipart-formdata">
         <fieldset>
-        <legend>Member Register</legend>
+        <legend>Member Edit</legend>
         <img src="<?php echo base_url()."public/images/avata/".$info['image'];?>"  width="150px"/><br/>
         
-        <label>Full name</label><?php echo form_input($full_name);?><br />
+        <label>Full name</label><br /><?php echo form_input($full_name);?><br />
 
-        <label>Username</label><?php echo form_input($username);?><br />
+        <label>Username</label><br /><?php echo form_input($username);?><br />
 
-        <label>Password</label><?php echo form_password($password);?><br />
+        <label>Password</label><br /><?php echo form_password($password);?><br />
 
-        <label>Re-Password</label><?php echo form_password($repassword);?><br />
+        <label>Re-Password</label><br /><?php echo form_password($repassword);?><br />
 
-        <label>Email</label><?php echo form_input($email);?><br />
+        <label>Email</label><br /><?php echo form_input($email);?><br />
 
-        <label>Address</label><?php echo form_input($address);?><br />
+        <label>Address</label><br /><?php echo form_input($address);?><br />
 
-        <label>Phone</label><?php echo form_input($phone);?><br />
+        <label>Phone</label><br /><?php echo form_input($phone);?><br />
 
         <label>Gender</label>
             Male<input name="gender" id="male" value="1" type="radio" <?php if($info['gender']==1) echo "checked";?> />
@@ -89,4 +89,5 @@
 
         </fieldset>
     </form>
+</div>
 </div>
