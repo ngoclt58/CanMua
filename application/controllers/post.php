@@ -12,6 +12,7 @@ class Post extends CI_Controller{
         $this->load->database();
         $this->load->model("mpost");
 		$this->load->model("muser"); 
+		$this->load->model("mcomment"); 
     }
     
     
@@ -170,6 +171,27 @@ class Post extends CI_Controller{
                                     <br/>";
                                    
                 $this->my_layout->view("post_complete",$data);	
+	}
+	
+	function comment($postid){
+	    if(!$this->my_auth->is_Login()){
+            redirect(base_url()."home/verify/login");
+            exit();
+        }
+		$userid = $this->my_auth->userid;
+		$username = $this->muser->getUsername($userid);
+		$image = $this->muser->getImage($userid);
+		$add = array(
+                        "content" => $this->input->post("content"),
+                        "add_date"  => date("Y-m-d H:i:s"),
+						"username" => $username,
+						"image" => $image, 
+						"postid" => $postid
+                );
+		if($this->mcomment->addComment($add)){
+		    redirect(base_url()."post_view/view_one_post/".$postid);
+		}
+		
 	}
 }
 ?>

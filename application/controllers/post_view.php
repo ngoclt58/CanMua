@@ -11,7 +11,8 @@ class Post_view extends CI_Controller{
         $this->load->library('encrypt');
         $this->load->database();
         $this->load->model("mpost");
-		$this->load->model("muser"); 
+		$this->load->model("muser");
+		$this->load->model("mcomment"); 
     }
     
     //--- Trang chu, hiển thị tất cả bài đăng
@@ -59,10 +60,14 @@ class Post_view extends CI_Controller{
    
    //Hiển thị một bài
    function view_one_post($postid){
-       $this->load->view("layout/top");
-            $data['info'] = $this->mpost->getOnePost($postid);	
-			$this->load->view('single',$data);
-			$this->load->view("layout/bottom");
+            $this->load->view("layout/top");			
+	        $userid = $this->my_auth->userid;
+            $data['info'] = $this->mpost->getOnePost($postid);
+			$data['comment'] = $this->mcomment->getInfo($postid);
+			$info['postid'] = $postid; 
+			$this->load->view('single',$data);	
+			$this->load->view("comment-form", $info);
+			$this->load->view("layout/bottom");	
    }
 }
 
