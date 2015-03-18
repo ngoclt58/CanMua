@@ -19,6 +19,27 @@ class muser extends CI_Model{
         return $data;
     }
     
+	
+	function getUsername($id){
+		$this->db->select('username');
+		
+	  	$this->db->where('userid',$id);
+		
+		$query = $this->db->get($this->_table);
+		$data = $query->row_array();
+        return $data['username'];
+	}
+	
+	function getImage($id){
+		$this->db->select('image');
+		
+	  	$this->db->where('userid',$id);
+		
+		$query = $this->db->get($this->_table);
+		$data = $query->row_array();
+        return $data['image'];
+	}
+	
     //--- Lay thong tin qua id
     function getInfo($id){
         $this->db->where("userid",$id);
