@@ -48,7 +48,7 @@
                             <div class="col-md-4 you-para">
 							<a href="<?php echo base_url();?>post_view/view_one_post/<?php echo $temp['postid'];?>"><img class="img-responsive pic-in" src="<?php echo base_url();?>public/images/post/<?php echo $temp['image']; ?>" alt=" " ></a>
 							<p><?php echo $temp['tenSP']?></p>
-							<span><label class="cat-in"> </label> <a href="#"> Detail </a></span>
+							<span><label class="cat-in"> </label> <a href="<?php echo base_url();?>post_view/view_one_post/<?php echo $temp['postid'];?>"> Detail </a></span>
                             </div>
                             <?php }?>
 						
@@ -99,7 +99,7 @@
 					</div>
 					<ul id="flexiselDemo1">	
                     <?php foreach($info as $temp){?>		
-				<li><a href="#"><img class="img-responsive women" src="<?php echo base_url();?>public/images/post/<?php echo $temp['image'];?>" alt=""></a>
+				<li><a href="<?php echo base_url();?>post_view/view_one_post/<?php echo $temp['postid'];?>"><img class="img-responsive women" src="<?php echo base_url();?>public/images/post/<?php echo $temp['image'];?>" alt=""></a>
 				<div class="hide-in">
 				<p><?php echo $temp['tenSP'];?></p>
 				</div></li>
