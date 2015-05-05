@@ -1,7 +1,7 @@
 <?php
-//require_once(APPPATH . '/controllers/home/user.php');
+require_once(APPPATH . '/controllers/home/user.php');
 //test file User trong constroller/home
-require_once dirname(__FILE__).'/../home/user.php';
+//require_once dirname(__FILE__).'/../home/user.php';
 
 
 class TestUser extends User
