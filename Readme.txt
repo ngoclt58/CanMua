@@ -18,7 +18,8 @@
 4) Hệ thống và cài đặt:
 	+) Phần mềm (chương trình viết code) : Dreamweaver Adobe CS6, PHPStorm, NetsBean ...
 	+) Hệ thống: bộ cài đặt XAMPP(hoặc WAMPP) để chạy WEB SERVER , tích hợp sẵn Apache, PHP, MySQL, FTP Server, Mail Server và các công cụ như phpMyAdmin
-	+) Ngôn ngữ: HTML, CSS, PHP, JavaScript, bộ thư viện Jquery, Bootstrap ...., CodeIgniter Framework.
+	+) Ngôn ngữ: HTML, CSS, PHP, JavaScript, bộ thư viện Jquery, Bootstrap ....
+	+) Framework: CodeIgniter.
 	
 5) Các chức năng chính:
 	+) Đăng kí , đăng nhập, tạo 1 tài khoản đưa thông tin sản phẩm cần mua
@@ -30,11 +31,14 @@
 	- Các user story đều được tạo trên dự án tại pivotaltracker
 	
 7) Mục tiêu:(updating)
-	- Sprint1: Thực hiện chức năng login, sign in, sign out, đăng thông tin sản phẩm cần mua...
-	- Sprint2: Dựa vào tài khoản cá nhân, thực hiện chức năng bình luận cho các bài đăng.
-	- Sprint3: Updating..........
+	- Sprint1: Thực hiện chức năng login, sign in, sign out, 
+	- Sprint2: Đăng thông tin sản phẩm cần mua
+	- Sprint3: Thực hiện chức năng bình luận bằng tài khoản đã đăng nhập vào các bài viết. 
 	
-8) Demo: https://www.youtube.com/watch?v=3S1dG_OSdjc&feature=youtu.be
+8) Demo: 
+     https://www.youtube.com/watch?v=3S1dG_OSdjc&feature=youtu.be
+     https://www.youtube.com/watch?v=POvxg_2KcDg&feature=youtu.be
+     https://www.youtube.com/watch?v=VdW40yI6p0E&feature=youtu.be
 9) Liên hệ:
 	- Mọi thắc mắc xin tra tại link sau: https://www.google.com
 	
