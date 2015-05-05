@@ -39,7 +39,10 @@
      https://www.youtube.com/watch?v=3S1dG_OSdjc&feature=youtu.be
      https://www.youtube.com/watch?v=POvxg_2KcDg&feature=youtu.be
      https://www.youtube.com/watch?v=VdW40yI6p0E&feature=youtu.be
-9) Liên hệ:
+     
+9) User story: https://www.pivotaltracker.com/n/projects/1296506 
+
+10) Liên hệ:
 	- Mọi thắc mắc xin tra tại link sau: https://www.google.com
 	
 	
