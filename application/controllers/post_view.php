@@ -57,17 +57,26 @@ class Post_view extends CI_Controller{
         }
    }
    
+   function search_post(){
+	$keyword = $_POST['keyword'];
+	$this->load->view("layout/top");	
+        $data['info'] = $this->mpost->search($keyword);
+	$data['owner']=FALSE;
+	$this->load->view('frontend/home',$data);
+	$this->load->view("layout/bottom");
+   }
+   
    
    //Hiển thị một bài
    function view_one_post($postid){
-            $this->load->view("layout/top");			
-	        $userid = $this->my_auth->userid;
-            $data['info'] = $this->mpost->getOnePost($postid);
-			$data['comment'] = $this->mcomment->getInfo($postid);
-			$info['postid'] = $postid; 
-			$this->load->view('single',$data);	
-			$this->load->view("comment-form", $info);
-			$this->load->view("layout/bottom");	
+        $this->load->view("layout/top");			
+	$userid = $this->my_auth->userid;
+        $data['info'] = $this->mpost->getOnePost($postid);
+	$data['comment'] = $this->mcomment->getInfo($postid);
+	$info['postid'] = $postid; 
+	$this->load->view('single',$data);	
+	$this->load->view("comment-form", $info);
+	$this->load->view("layout/bottom");	
    }
 }
 

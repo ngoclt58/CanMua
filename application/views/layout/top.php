@@ -75,8 +75,8 @@
 					<div class="clearfix"> </div>					
 				</div>
 				<div class="search">
-					<form>
-						<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" >
+					<form action = "<?php echo base_url();?>post_view/search_post" method = "POST">
+						<input type="text" name ="keyword" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" >
 						<input type="submit"  value="">
 					</form>
 				</div>
