@@ -32,14 +32,14 @@
 					</ul>
 				</div>
 				<div class="header-grid-right">
-                   <a href="<?php base_url();?>/CanMua2/home/verify/logout" class="sign-out"> Sign out</a>
+                   <a href="<?php base_url();?>/CanMua/home/verify/logout" class="sign-out"> Sign out</a>
 					<label>|</label>
                     
-					<a href="<?php base_url();?>/CanMua2/home/user/register" class="sign-up"> Sign up</a>
+					<a href="<?php base_url();?>/CanMua/home/user/register" class="sign-up"> Sign up</a>
                     
                     <label>|</label>
                     
-                     <a href="<?php base_url();?>/CanMua2/home/verify/login" class="sign-in"> Sign in</a>
+                     <a href="<?php base_url();?>/CanMua/home/verify/login" class="sign-in"> Sign in</a>
                     
                     
 				</div>

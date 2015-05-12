@@ -57,14 +57,7 @@ class Post_view extends CI_Controller{
         }
    }
    
-   function search_post(){
-	$keyword = $_POST['keyword'];
-	$this->load->view("layout/top");	
-        $data['info'] = $this->mpost->search($keyword);
-	$data['owner']=FALSE;
-	$this->load->view('frontend/home',$data);
-	$this->load->view("layout/bottom");
-   }
+  
    
    
    //Hiển thị một bài

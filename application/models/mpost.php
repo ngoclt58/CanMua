@@ -33,17 +33,7 @@ class mpost extends CI_Model{
         else
             return FALSE;
     }
-    
-    //--- Lay thong tin qua keyword
-    function search($keyword){
-        //$query = $this->db->query("SELECT * FROM 'post' WHERE '$tenSP' LIKE '$keyword' ");
-        $this->db->like($tenSP,$keyword);
-        $query = $this->db->get($this->_table);
-        if($query)
-            return $query->result_array();
-        else
-            return FALSE;
-    }
+
 	
 	//--- Lay thong tin 1 record qua id
     function getRowInfo($id,$num){
